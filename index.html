@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<link rel="stylesheet"  href="styl.css">
+</head>
+
+<body>
+    
+    <header>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Ciasteczka!</strong> Ta strona nie używa plików cookies.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">NoBo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Strona główna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sąsiedzi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dary
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Akcje</a></li>
+                <li><a class="dropdown-item" href="#">Warsztaty</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Prpozycje</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Dostosuj</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Szukaj</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <h1> Pracownia projektów własnych</h1>      
+    </header>
+
+    <main>
+      <header>           
+          <img src="http://ina.you2.pl/wp-content/uploads/2022/03/surface-Pfmow4b9GAY-unsplash-sr.jpg" alt="InaYa Photo">        
+      </header>   
+
+      <div> 
+      <ul class="list-unstyled">
+          <li>Czym się będziemy zajmować?</li>
+          
+          <ul>
+              <li>projektowaniem</li>
+              <li>tworzeniem</li>
+              <li>upowszechnianiem</li>
+          </ul>
+        </ul>
+      </div>
+    
+      <figure class="text-center">
+        <blockquote class="blockquote">
+        <p>
+        „To, co powstrzymuje ludzi, to nie jakość ich pomysłów, tylko brak wiary w siebie”.      
+        </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Russell Simmons<cite title="Source Title">"A słowo..."</cite>
+        </figcaption>
+      </figure>
+
+      <div class="container">
+          <h2>WARSZTATY</h2>
+    
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Warsztaty</th>
+              <th scope="col">Liczba godzin</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>grafika</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>akwarela</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <td>gwasz</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>techniki mieszane</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div>           
+        <img src="img/Myo.jpg" alt="Team Photo">        
+      </div>   
+
+
+
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>FORMULARZ</strong> Jeżeli potrzebujesz materiałów - zaloguj się!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+      <article>
+        <header>
+          <h4>Materiały dla uczestników warsztatów:</h4>
+          <h4>dostępne po zalogowaniu</h4>
+        </header>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Adres e-mail:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nigdy nie udostępnimy Twojego e-maila nikomu innemu.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Hasło</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Sprawdź mnie</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
+      </article>
+    </main>
+
+    <footer>
+      <p>Wszelkie prawa zastrzeżone</p>        
+    </footer>
+
+    
+</body>
+</html>
